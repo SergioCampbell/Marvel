@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In this case I use [React Router Dom](https://reactrouter.com/docs/en/v6) to comunicate the navigation in the app; [Bootstrap 5](https://getbootstrap.com)
 just to make it friendly 😅  and the atomic design pattern (try to make every single tag to an atom and them to component  🤯.
 
+### Notes
+The PUBLIC AND PRIVATE KEY´s it located in the config file (you have to use your own keis available in your [personal Marvel Account](https://developer.marvel.com/account) )
+
 ## Available Scripts
 
 In the project directory, you can run:
