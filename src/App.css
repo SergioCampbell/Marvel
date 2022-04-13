@@ -1,4 +1,14 @@
 body{
   background: rgb(255,0,0);
-  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(33,33,33,1) 100%); 
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(33,33,33,1) 100%);
+}
+
+#algo{
+  transition: .5s;
+  background: red;
+}
+
+#algo:hover {
+  transition: .5s;
+  background: linear-gradient(rgba(255,0,0,1) 0%, rgba(33,33,33,1));
 }

@@ -1,12 +1,12 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import "../../App.css";
 
-export default function Comics({ comics }) {
+export default function Series({ series }) {
   return (
     <section className="row">
-      <h2 className=" text-white display-4">Comics List</h2>
+      <h2 className=" text-white display-4">Series List</h2>
 
-      {comics.map((item) => (
+      {series.map((item) => (
         <article
           className="card col-sm-4 mt-3 bg-secondary text-white"
           key={item.id}
@@ -23,7 +23,7 @@ export default function Comics({ comics }) {
             />
             <p className="card-text mt-2">{item.description}</p>
             <hr />
-            <Link to={`/character/${item.id}`}>
+            <Link to={`/series/${item.id}`}>
               <button className="btn btn-danger">Details</button>
             </Link>
           </div>

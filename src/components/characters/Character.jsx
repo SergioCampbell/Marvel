@@ -12,7 +12,6 @@ export default function Character() {
   let ts = Date.now();
   const cifrate = md5(ts + PRIVATE_KEY + PUBLIC_KEY);
 
-  const API = `https://gateway.marvel.com/v1/public/characters/${id}?ts=${ts}&apikey=${PUBLIC_KEY}&hash=${cifrate}`;
   const API_CHARACTER = `https://gateway.marvel.com/v1/public/characters/${id}apikey=${PUBLIC_KEY}&hash=${cifrate}`;
   useEffect(() => {
     muestra();
