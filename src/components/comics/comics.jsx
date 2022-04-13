@@ -15,8 +15,8 @@ export default function Comics({ comics }) {
             <img
               src={
                 item.thumbnail.path
-                  ? `https://via.placeholder.com/150/DC143C/FFFFFF?Text=${item.name}`
-                  : item.thumbnail.resourceURI
+                  ? `${item.thumbnail.path}/standard_amazing.${item.thumbnail.extension}`
+                  : `https://via.placeholder.com/150/DC143C/FFFFFF?Text=${item.name}`
               }
               alt={item.name}
               className="img-thumbnail"
