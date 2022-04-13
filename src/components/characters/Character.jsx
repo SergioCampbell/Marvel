@@ -31,9 +31,11 @@ export default function Character() {
       <img src={detail.thumbnail.path} alt={detail.name} />
       <p>{detail.description}</p>
       <p>{detail.comics.available}</p>
-      <ul>
-        <li>{detail.comics.item}</li>
+      {detail.comics[0].item.forEach(element => {
+        <ul>
+        <li>{element}</li>
       </ul>
+      })}
     </section>
   );
 }
