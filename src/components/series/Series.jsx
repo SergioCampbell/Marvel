@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../App.css";
 import './ser.css'
 
 export default function Series({ series }) {
@@ -23,7 +24,7 @@ export default function Series({ series }) {
               alt={item.name}
               className="img-thumbnail text-dark chart"
             />
-            <span className='sers'>{item.name}</span>
+            <span className='sers'>{item.title}</span>
             </div>
             <hr />
             <p className="card-text mt-2">{item.description}</p>

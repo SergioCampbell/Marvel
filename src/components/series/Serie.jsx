@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { PUBLIC_KEY, ts, cifrate } from "../../config/config";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import './ser.css'
 
 export default function Serie({ series }) {
-  console.log("Ruta Detail series: \n", series);
   const { id } = useParams();
 
   const [detail, setdetail] = useState([]);
@@ -20,8 +19,6 @@ export default function Serie({ series }) {
     const results = all.data.results;
     setdetail(results);
   };
-
-  console.log("detail:\n", detail);
 
   return (
         <section className="container text-light">

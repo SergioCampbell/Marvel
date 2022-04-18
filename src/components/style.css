@@ -20,3 +20,14 @@
   0% {  transform: rotate(0)}
   100% { transform: rotate(360deg)}
 }
+
+.footer{
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(33,33,33,1) 100%);
+  height: 100%;
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+

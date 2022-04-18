@@ -1,9 +1,10 @@
 .coms{
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(90deg, rgba(196, 21, 21, 0.434), rgba(92, 0, 0, 0.442));
+    bottom: 8px;
+    height: auto;
+    left: 16px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgb(196, 21, 21), rgb(92, 0, 0));
 }
 
 .chart{

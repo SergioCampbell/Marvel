@@ -12,3 +12,9 @@ body{
   transition: .5s;
   background: linear-gradient(rgba(255,0,0,1) 0%, rgba(33,33,33,1));
 }
+
+::selection {
+  background-color: red;
+  color: white;
+}
+

@@ -17,6 +17,7 @@ import Home from "./views/Home";
 import Nav from "./components/Nav";
 import Creators from "./components/creators/Creators";
 import Loader from "./components/Loader";
+import Footer from "./components/footer";
 
 export default function App() {
   const [characters, setCharacters] = useState([]);
@@ -99,6 +100,7 @@ export default function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       )}
+      <Footer />
     </main>
   );
 }
