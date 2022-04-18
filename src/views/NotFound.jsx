@@ -1,11 +1,22 @@
-import React from 'react'
+import React from "react";
+import './found.css'
 
-export default function NotMatch () {
-    return (
-        <main className='mt-5'>
-            <p className='display-5 text-warning'>
-                Aquí va un mega not found bien perron `uwu`
-            </p>
-        </main>
-    )
+export default function NotMatch() {
+  return (
+    <>
+      <h1 className="h1">
+        404 <br /> NOT FOUND
+      </h1>
+
+      <div class="frame">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="caps">
+        <img src="#" alt=""/>
+      </div>
+      <canvas id="canvas"></canvas>
+    </>
+  );
 }

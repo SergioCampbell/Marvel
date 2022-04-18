@@ -1,0 +1,13 @@
+.coms{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, rgba(196, 21, 21, 0.434), rgba(92, 0, 0, 0.442));
+}
+
+.chart{
+    position: relative;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(196, 21, 21, 0.434), rgba(92, 0, 0, 0.442));
+}

@@ -24,6 +24,11 @@ export default function Nav() {
           <a href="#" className="nav-link link-light">Series</a>
         </span>
       </Link>
+      <Link to="/creators">
+        <span className="nav-item text-warning">
+          <a href="#" className="nav-link link-light">Creators</a>
+        </span>
+      </Link>
     </nav>
   );
 }

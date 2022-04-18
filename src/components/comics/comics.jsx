@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../App.css";
+import './com.css'
 
 export default function Comics({ comics }) {
   return (
@@ -12,6 +13,7 @@ export default function Comics({ comics }) {
           key={item.id}
         >
           <div className="card-body">
+            <div className="chart">
             <img
               src={
                 item.thumbnail.path
@@ -19,11 +21,13 @@ export default function Comics({ comics }) {
                   : `https://via.placeholder.com/150/DC143C/FFFFFF?Text=${item.name}`
               }
               alt={item.name}
-              className="img-thumbnail"
+              className="img-thumbnail text-dark "
             />
+            <span className='coms'>{item.title}</span>
+            </div>
             <p className="card-text mt-2">{item.description}</p>
             <hr />
-            <Link to={`/character/${item.id}`}>
+            <Link to={`/comics/${item.id}`}>
               <button className="btn btn-danger">Details</button>
             </Link>
           </div>

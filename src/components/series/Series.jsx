@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './ser.css'
 
 export default function Series({ series }) {
   return (
@@ -12,6 +13,7 @@ export default function Series({ series }) {
           key={item.id}
         >
           <div className="card-body">
+            <div className='chart'>
             <img
               src={
                 item.thumbnail.path
@@ -19,10 +21,12 @@ export default function Series({ series }) {
                   : `https://via.placeholder.com/150/DC143C/FFFFFF?Text=${item.name}`
               }
               alt={item.name}
-              className="img-thumbnail"
+              className="img-thumbnail text-dark chart"
             />
-            <p className="card-text mt-2">{item.description}</p>
+            <span className='sers'>{item.name}</span>
+            </div>
             <hr />
+            <p className="card-text mt-2">{item.description}</p>
             <Link to={`/series/${item.id}`}>
               <button className="btn btn-danger">Details</button>
             </Link>
