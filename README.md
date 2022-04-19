@@ -1,4 +1,4 @@
-# Getting Started with this App
+# Getting Started with this Wiki App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 In this case I use [React Router Dom](https://reactrouter.com/docs/en/v6) to comunicate the navigation in the app; [Bootstrap 5](https://getbootstrap.com)
